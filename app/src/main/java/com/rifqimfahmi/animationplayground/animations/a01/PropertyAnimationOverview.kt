@@ -1,11 +1,12 @@
-package com.rifqimfahmi.animationplayground.animations
+package com.rifqimfahmi.animationplayground.animations.a01
 
 import com.rifqimfahmi.animationplayground.R
+import com.rifqimfahmi.animationplayground.animations.BaseExampleActivity
 
-class A01_PropertyAnimationOverview : BaseExampleActivity() {
+class PropertyAnimationOverview : BaseExampleActivity() {
 
     override fun getLayoutResource(): Int {
-        return R.layout.activity_a01__property_animation_overview
+        return R.layout.activity_property_animation_overview
     }
 
     override fun getScreenTitle(): String {

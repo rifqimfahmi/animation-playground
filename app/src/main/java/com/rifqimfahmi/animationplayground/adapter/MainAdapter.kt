@@ -5,7 +5,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.rifqimfahmi.animationplayground.R
-import com.rifqimfahmi.animationplayground.animations.A01_PropertyAnimationOverview
+import com.rifqimfahmi.animationplayground.animations.a01.PropertyAnimationOverview
 import com.rifqimfahmi.animationplayground.model.Example
 import kotlinx.android.synthetic.main.item_example.view.*
 
@@ -16,7 +16,7 @@ import kotlinx.android.synthetic.main.item_example.view.*
 class MainAdapter(val listener: ExampleItem.Listener) : RecyclerView.Adapter<ExampleItem>() {
 
     private val data = arrayListOf(
-        Example(A01_PropertyAnimationOverview.TITLE, A01_PropertyAnimationOverview::class.java)
+        Example(PropertyAnimationOverview.TITLE, PropertyAnimationOverview::class.java)
     )
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ExampleItem {
