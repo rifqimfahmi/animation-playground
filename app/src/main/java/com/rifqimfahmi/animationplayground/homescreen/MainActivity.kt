@@ -1,11 +1,12 @@
-package com.rifqimfahmi.animationplayground
+package com.rifqimfahmi.animationplayground.homescreen
 
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.rifqimfahmi.animationplayground.adapter.ExampleItem
-import com.rifqimfahmi.animationplayground.adapter.MainAdapter
-import com.rifqimfahmi.animationplayground.model.Example
+import com.rifqimfahmi.animationplayground.R
+import com.rifqimfahmi.animationplayground.homescreen.adapter.ExampleItem
+import com.rifqimfahmi.animationplayground.homescreen.adapter.MainAdapter
+import com.rifqimfahmi.animationplayground.homescreen.model.Example
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity(), ExampleItem.Listener {

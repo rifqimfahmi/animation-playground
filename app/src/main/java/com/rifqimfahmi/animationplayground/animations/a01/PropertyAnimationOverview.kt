@@ -1,20 +1,18 @@
 package com.rifqimfahmi.animationplayground.animations.a01
 
-import com.rifqimfahmi.animationplayground.R
-import com.rifqimfahmi.animationplayground.animations.BaseExampleActivity
+import androidx.recyclerview.widget.RecyclerView
+import com.rifqimfahmi.animationplayground.animations.a00_base.BaseExampleListActivity
+import com.rifqimfahmi.animationplayground.animations.a01.adapter.PropertyAnimationAdapter
+import com.rifqimfahmi.animationplayground.animations.a01.adapter.PropertyAnimationTypeFactoryImpl
 
-class PropertyAnimationOverview : BaseExampleActivity() {
-
-    override fun getLayoutResource(): Int {
-        return R.layout.activity_property_animation_overview
-    }
+class PropertyAnimationOverview : BaseExampleListActivity() {
 
     override fun getScreenTitle(): String {
         return TITLE
     }
 
-    override fun setupOnCreate() {
-
+    override fun addAdapterToRv(recyclerView: RecyclerView) {
+        recyclerView.adapter = PropertyAnimationAdapter(PropertyAnimationTypeFactoryImpl())
     }
 
     override fun getLinkResource(): String {

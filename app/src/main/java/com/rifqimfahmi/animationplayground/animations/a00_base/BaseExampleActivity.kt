@@ -1,4 +1,4 @@
-package com.rifqimfahmi.animationplayground.animations
+package com.rifqimfahmi.animationplayground.animations.a00_base
 
 import android.content.Intent
 import android.net.Uri

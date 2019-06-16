@@ -1,6 +1,6 @@
-package com.rifqimfahmi.animationplayground.model
+package com.rifqimfahmi.animationplayground.homescreen.model
 
-import com.rifqimfahmi.animationplayground.animations.BaseExampleActivity
+import com.rifqimfahmi.animationplayground.animations.a00_base.BaseExampleActivity
 
 /*
  * Created by Rifqi Mulya Fahmi on 2019-06-15.

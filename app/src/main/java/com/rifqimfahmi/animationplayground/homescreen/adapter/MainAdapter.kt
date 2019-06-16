@@ -1,12 +1,12 @@
-package com.rifqimfahmi.animationplayground.adapter
+package com.rifqimfahmi.animationplayground.homescreen.adapter
 
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.rifqimfahmi.animationplayground.R
-import com.rifqimfahmi.animationplayground.animations.a01.PropertyAnimationOverview
-import com.rifqimfahmi.animationplayground.model.Example
+import com.rifqimfahmi.animationplayground.homescreen.model.Example
+import com.rifqimfahmi.animationplayground.homescreen.model.ExampleModelCreator
 import kotlinx.android.synthetic.main.item_example.view.*
 
 /*
@@ -15,9 +15,7 @@ import kotlinx.android.synthetic.main.item_example.view.*
 
 class MainAdapter(val listener: ExampleItem.Listener) : RecyclerView.Adapter<ExampleItem>() {
 
-    private val data = arrayListOf(
-        Example(PropertyAnimationOverview.TITLE, PropertyAnimationOverview::class.java)
-    )
+    private val data = ExampleModelCreator.create()
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ExampleItem {
         return ExampleItem.create(parent)
