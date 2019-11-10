@@ -10,7 +10,8 @@ import com.rifqimfahmi.animationplayground.animations.a00_base.model.Visitable
 object PropertyAnimationModels {
     fun create(): List<Visitable<PropertyAnimationTypeFactory>> {
         return arrayListOf(
-            ModelValueAnimator()
+            ModelValueAnimator(),
+            ModelObjectAnimator()
         )
     }
 }

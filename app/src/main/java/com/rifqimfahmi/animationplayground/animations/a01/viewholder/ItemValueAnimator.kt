@@ -1,5 +1,6 @@
 package com.rifqimfahmi.animationplayground.animations.a01.viewholder
 
+import android.animation.ObjectAnimator
 import android.animation.ValueAnimator
 import android.view.View
 import android.widget.TextView
